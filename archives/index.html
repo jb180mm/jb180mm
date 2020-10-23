@@ -40,9 +40,17 @@
 <body>
   <div id="app">
     
+      <canvas class="fireworks"></canvas>
+      <style>
+        .fireworks {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 99999;
+          pointer-events: none;
+        }
+      </style>
       
-      <canvas width="1777" height="841"
-        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
       
     <main class="content on">
       <section class="outer">
@@ -134,10 +142,6 @@
       <div class="float_btns">
         <div class="totop" id="totop">
   <i class="ri-arrow-up-line"></i>
-</div>
-
-<div class="todark" id="todark">
-  <i class="ri-moon-line"></i>
 </div>
 
       </div>
@@ -345,11 +349,12 @@
 
 <!-- ClickBoom1 -->
 
+<script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script>
+
+<script src="/js/clickBoom1.js"></script>
+
+
 <!-- ClickBoom2 -->
-
-
-<script src="/js/clickBoom2.js"></script>
-
 
 <!-- CodeCopy -->
 
@@ -415,6 +420,23 @@
 <!-- CanvasBackground -->
 
 
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=471385043&auto=1&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
     
   </div>
 </body>
